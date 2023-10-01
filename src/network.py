@@ -53,7 +53,7 @@ class Network(object):
         tracking progress, but slows things down substantially."""
 #        test_data = list(test_data)
         if test_data: n_test = len(list(test_data))
-        n = len(training_data)
+        n = len(list(training_data))
         for j in xrange(epochs):
             random.shuffle(training_data)
             mini_batches = [
