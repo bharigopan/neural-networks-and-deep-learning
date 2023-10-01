@@ -51,8 +51,8 @@ class Network(object):
         network will be evaluated against the test data after each
         epoch, and partial progress printed out.  This is useful for
         tracking progress, but slows things down substantially."""
-        test_data = list(test_data)
-        if test_data: n_test = len(test_data)
+#        test_data = list(test_data)
+        if test_data: n_test = len(list(test_data))
         n = len(training_data)
         for j in xrange(epochs):
             random.shuffle(training_data)
